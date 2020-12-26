@@ -2,9 +2,9 @@
 
 A tool to download Panopto video using Python and FFmpeg.
 
-The key idea of this tool is using FFmpeg to download `index.m3u8`, which is loaded while opening the Panopto video page. Although FFmpeg provided command line tools to download .m3u8 directly, it is hard to remember, so this tool is written to facilitate downloading. Please use at your own risk.
+The key idea of this tool is using FFmpeg to download `index.m3u8`, which is loaded while opening the Panopto video page. Although FFmpeg provided command line tools to download .m3u8 directly, it is hard to remember, so this tool is written to facilitate downloading.
 
-
+Please feel free to raise issues and suggestions. As this is a kind of crawling, use at your own risk.
 
 # Configuration
 ### For Window and Mac
@@ -21,8 +21,6 @@ sudo apt install ffmpeg
 ```
 2. Download my script and amend the `video_folder_path` to fit your computer
 
-
-
 # Usage
 
 I have tested on Chrome only.
@@ -38,3 +36,6 @@ You can download video / `.m3u8` using FFmpeg by command line tool. Example comm
 `"D:\ffmpeg" -protocol_whitelist file,http,https,tcp,tls,crypto -i "https://YourURL/index.m3u8" -c copy "D:\Video\filename.mp4"`
 
 I have packed it into a Python file so that I can download multiple videos at the same time without remembering the complicated command.
+
+# Limitation
+Finding the `index.m3u8` URL is tedious, but I don't know how to automate this. The main problem is getting loaded resource URL in a webpage, which seems cannot be done by requests and selenium. Please tell me if you have any idea. Many thanks.
