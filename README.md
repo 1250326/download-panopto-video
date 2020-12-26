@@ -21,10 +21,11 @@ sudo apt install ffmpeg
 ```
 2. Download my script and amend the `video_folder_path` to fit your computer
 
-# Usage
+# How to Use
 
 I have tested on Chrome only.
-For each video you would like to download, follow these steps
+
+For each video you would like to download, follow these steps:
 1. In the Panopto video page, press `F12` to open developer tools
 2. Go to the Network tab, refresh the page, and search `index.m3u8` in search box
 3. Press on `index.m3u8`, go to Headers tab and copy the Request URL
