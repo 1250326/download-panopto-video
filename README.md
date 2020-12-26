@@ -1,10 +1,10 @@
 # Download Panopto Video Using Python
---------
+
 A tool to download Panopto video using Python and FFmpeg.
 
 The key idea of this tool is using FFmpeg to download `index.m3u8`, which is loaded while opening the Panopto video page. Although FFmpeg provided command line tools to download .m3u8 directly, it is hard to remember, so this tool is written to facilitate downloading. Please use at your own risk.
 
--------
+
 
 # Configuration
 ### For Window and Mac
@@ -21,7 +21,7 @@ sudo apt install ffmpeg
 ```
 2. Download my script and amend the `video_folder_path` to fit your computer
 
-------
+
 
 # Usage
 
@@ -32,7 +32,7 @@ For each video you would like to download, follow these steps
 3. Press on `index.m3u8`, go to Headers tab and copy the Request URL
 4. Modify the python script and add a key-value pair in the `video` dictionary. Key is the file name you want to store and value is the copied URL
 
---------------
+
 # Idea
 You can download video / `.m3u8` using FFmpeg by command line tool. Example command is as follow:
 `"D:\ffmpeg" -protocol_whitelist file,http,https,tcp,tls,crypto -i "https://YourURL/index.m3u8" -c copy "D:\Video\filename.mp4"`
