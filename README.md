@@ -1,6 +1,6 @@
-# Download Panopto Video Using Python
+# Download Panopto Video (or .m3u8) Using Python
 
-A tool to download Panopto video using Python and FFmpeg.
+A tool to download Panopto video, or `.m3u8` file in general, using Python and FFmpeg.
 
 The key idea of this tool is using FFmpeg to download `index.m3u8`, which is loaded while opening the Panopto video page. Although FFmpeg provided command line tools to download .m3u8 directly, it is hard to remember, so this tool is written to facilitate downloading.
 
