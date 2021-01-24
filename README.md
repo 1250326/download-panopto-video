@@ -42,3 +42,6 @@ I have packed it into a Python file so that I can download multiple videos at th
 If the Panopto video is consist of Powerpoint slides, ie you can click on the slide to jump into specific part of video, this method will only download the audio part, and this method is not suitable for this video.
 
 Finding the `index.m3u8` URL is tedious, but I don't know how to automate this. The main problem is getting loaded resource URL in a webpage, which seems cannot be done by requests and selenium. Please tell me if you have any idea. Many thanks.
+
+# License
+This repository is under BSD 2-Clause "Simplified" License.
